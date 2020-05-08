@@ -33,7 +33,7 @@
 	<modules/>
 	<properties>
 		<log4j2.version>2.13.2</log4j2.version>
-		<scm.url>https://github.com/heimbugerj/concrete-cows-common-libs</scm.url>
+		<scm.url>https://github.com/heimbugerj/concrete-cows-parent</scm.url>
 	</properties>
 
 	<!-- Build Settings -->
@@ -44,7 +44,7 @@
 	<!-- More Project Information -->
 	<name>common-libs</name>
 	<description>A collection of libraries with commonly used functionalities</description>
-	<url>common-libs.concretecows.de</url>
+	<url>${scm.url}</url>
 	<inceptionYear>2020</inceptionYear>
 	<licenses>
 		<license>
