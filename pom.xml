@@ -1,0 +1,77 @@
+    <project xmlns="http://maven.apache.org/POM/4.0.0"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+                          http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<!-- The Basics -->
+	<groupId>de.concretecows</groupId>
+	<artifactId>concrete-cows-common-libs</artifactId>
+	<version>1.0.0-SNAPSHOT</version>
+	<packaging>pom</packaging>
+	<dependencies>
+	</dependencies>
+	<parent>
+		<groupId>de.concretecows</groupId>
+		<artifactId>concrete-cows-parent</artifactId>
+		<version>1.0.0-SNAPSHOT</version>
+	</parent>
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>org.apache.logging.log4j</groupId>
+				<artifactId>log4j-api</artifactId>
+				<version>${log4j2.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.logging.log4j</groupId>
+				<artifactId>log4j-core</artifactId>
+				<version>${log4j2.version}</version>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+	<modules/>
+	<properties>
+		<log4j2.version>2.13.2</log4j2.version>
+		<scm.url>https://github.com/heimbugerj/concrete-cows-common-libs</scm.url>
+	</properties>
+
+	<!-- Build Settings -->
+	<build>
+	</build>
+	<reporting/>
+
+	<!-- More Project Information -->
+	<name>common-libs</name>
+	<description>A collection of libraries with commonly used functionalities</description>
+	<url>common-libs.concretecows.de</url>
+	<inceptionYear>2020</inceptionYear>
+	<licenses>
+		<license>
+			<name>Apache-2.0</name>
+			<url>https://www.apache.org/licenses/LICENSE-2.0.txt</url>
+			<distribution>repo</distribution>
+			<comments>A business-friendly OSS license</comments>
+		</license>
+	</licenses>
+	<organization/>
+	<developers>
+	</developers>
+	<contributors>
+	</contributors>
+
+	<!-- Environment Settings -->
+	<issueManagement/>
+	<ciManagement/>
+	<mailingLists/>
+	<scm>
+		<connection>scm:git:${scm.url}.git</connection>
+		<developerConnection>scm:git:${scm.url}.git</developerConnection>
+		<url>scm:git:${scm.url}</url>		
+	</scm>
+	<prerequisites/>
+	<repositories/>
+	<pluginRepositories/>
+	<distributionManagement/>
+	<profiles/>
+</project>
